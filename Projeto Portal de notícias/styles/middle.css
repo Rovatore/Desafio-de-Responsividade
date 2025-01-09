@@ -1,0 +1,52 @@
+
+@media (width <= 23.4375rem) {
+  #weekly {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  
+  img{
+    border-radius: 4px;
+    width: 100%;
+  }
+
+}
+
+  #header{
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    text-wrap: nowrap;
+    & a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 4px;
+    }
+    
+  }
+#ai{
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+
+#more {
+  margin-top: 32px;
+  
+   & a {
+    justify-content: center;
+   }
+  h3{
+    margin-top: 8px;
+  }
+  img {
+    width: 72px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+}
+}

@@ -1,0 +1,106 @@
+.test{
+  border: 1px solid white;
+}
+
+.flex {
+  display: flex;
+}
+
+.just-center{
+  justify-content: center;
+}
+.between{
+  justify-content: space-between;
+}
+.align-center{
+  align-items: center;
+}
+  
+  
+.grid{
+  display: grid;
+}
+.grid-flow-col {
+  grid-auto-flow: column;
+}
+.grid-cols-2{
+  grid-template-columns: 1fr 1fr;
+}
+.gap-16 {
+  gap: 16px;
+}
+
+.gap-8{
+  gap: 8px;
+}
+.gap-32{
+  gap: 32px;
+}
+.text-2xl {
+  font: var(--h1);
+}
+.text-xl{
+  font: var(--h2);
+  color: var(--text-color-primary);
+}
+.text-lg {
+  font: var(--h3);
+}
+
+.text-sm {
+  font: var(--text-sm);
+  color: var(--text-color-secondary);
+}
+.text-span {
+  font: var(--text-span);
+}
+
+.arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+
+  & span {
+    width: 16px;
+    height: 16px;
+    background-image: url(../assets/icon/ArrowRight.svg);
+  }
+}
+.ai-card{
+  display: flex;
+  width: 696px;
+    
+  
+  & h3 {
+    width: 504px;
+    margin-top: 8px;
+    margin-bottom: 4px;
+  }
+  & img {
+    width: 176px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+}
+.arrow:hover{
+    & span {
+      width: 16px;
+      height: 16px;
+      background-image: url(../assets/icon/ArrowRight-hover.svg);
+    }
+}
+@media (width <= 23.4375rem) {
+.grid{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.grid-flow-col {
+  grid: none;
+}
+.grid-cols-2{
+  grid: none;
+}
+}

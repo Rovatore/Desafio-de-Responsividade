@@ -1,0 +1,213 @@
+section header {
+  border-top: solid var(--stroke-color);
+  padding-block: 12px 24px;
+  font: var(--text-span);
+
+  a {
+  justify-self: end;
+  align-items: center;
+  gap: 8px;
+  
+}
+}
+
+#featured {
+  grid-area: featured;
+  img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4p;
+  }
+
+  .card{
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    &::before{
+      content: "";
+      position: absolute;
+      inset: 0;
+      top: 50%;
+      background: linear-gradient(
+        180deg,
+        transparent 0%,
+        #020617 100%
+      );
+    }
+
+    figcaption{
+      position: absolute;
+      bottom: 0;
+      
+      padding: 24px;
+
+      &:has(.text-lg){
+        padding: 12px;
+      }
+      h2{
+        margin-top: 8px;
+      }
+    }
+  }
+}
+
+#weekly {
+  grid-area: weekly;
+
+  &>div{
+grid-template-columns: repeat(4, 292px);
+  }
+
+  img{
+    height: 160px;
+  }
+
+  figure {
+    position: relative;
+    
+    .content-tag {
+      position: absolute;
+      top: 8px;
+      left: 8px;
+    }
+
+    p {
+      margin-top: 8px;
+      font-weight: 800;
+    }
+  }
+
+}
+
+#ai {
+  grid-area: ai;
+  
+  img {
+    width: 176px;
+    height: 176px;
+  }
+
+
+}
+
+
+aside {
+  grid-area: aside;
+}
+
+
+#more {
+  margin-top: 32px;
+   & a {
+    justify-content: end;
+   }
+  & h3{
+    margin-top: 8px;
+  }
+  & img {
+    width: 72px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+}
+/*Mudanças de texto para Pc*/
+#rob::after{
+  visibility: visible;
+  content: "Robôs domésticos começam a ser adotados para tarefas diárias,prometendo mais conforto e eficiência nas residências.";
+}
+#net::after{
+  visibility: visible;
+  content: "Tecnologia 6G chega às metrópoles brasileiras, prometendo revolucionar a forma como vivemos e nos comuni...";
+}
+
+ #vestiment::after{
+  visibility: visible;
+  content: "Empresa lança relógio inteligente capaz de monitorar a saúde mental, oferecendo insights valiosos para o....";
+ }
+ 
+ #vr::after{
+  visibility: visible;
+  content: "Escolas adotam a tecnologia VR para proporcionar experiências imersivas transformando a aprendizagem trad...";
+ }
+ #vehicle::after{
+  visibility: visible;
+  content: "Protótipo de veículo voador é apresentado, marcando o início da era dos transportes aéreos pessoais.";
+ }
+ #hologram::after{
+  visibility: visible;
+  content: "Plataforma de videoconferência apresenta nova função de hologramas, tornando as chamadas...";
+ }
+
+ #vr-2::after{
+  visibility: visible;
+  content: "Nova geração de consoles de videogame é lançada, trazendo gráficos ultra-realistas e experiênci...";
+ }
+ 
+ #internet-2::after{
+  visibility: visible;
+  content: "Projeto busca oferecer internet de alta velocidade em áreas remotas através de satélites.";
+ }
+
+ /*Acaba aqui*/
+
+@media  (width <= 23.4375rem)  {
+
+  /*Mudança de texto para mobile/outros*/
+
+  #rob {
+    visibility: hidden;
+    position: relative;
+  }
+ #rob::after{
+  visibility: visible;
+  content: " Robôs domésticos começam a ser adotados para tarefas...";
+ }
+
+ #rob-img{
+  height: 416px;
+ }
+
+ #net{
+  visibility: hidden;
+  position: relative;
+ }
+
+ #net::after{
+  visibility: visible;
+  content: "Tecnologia 6G chega às metrópoles brasileiras, prometendo revolucionar a forma como vivemos e nos comunicamos.";
+ }
+ #vestiment{
+  visibility: hidden;
+  position: relative;
+ }
+ #vestiment::after{
+  visibility: visible;
+  content: "Empresa lança relógio inteligente capaz de monitorar a saúde mental, oferecendo insights valiosos para o bem-estar pessoal.";
+ }
+
+ #vr::after{
+  visibility: visible;
+  content: "Escolas adotam a tecnologia VR para proporcionar experiências imersivas, transformando a aprendizagem tradicional.";
+ }
+ 
+ #vehicle::after{
+  visibility: visible;
+  content: "Protótipo de veículo voador é apresentado, marcando o início da era dos transportes aéreos pessoais.";
+ }
+ #hologram::after{
+  visibility: visible;
+  content: "Plataforma de videoconferência apresenta nova função de hologramas, tornando as chamadas virtuais mais rea...";
+ }
+
+ #vr-2::after{
+  visibility: visible;
+  content: "Nova geração de consoles de videogame é lançada, trazendo gráficos ultra-realistas e experiências de jogo totalm...";
+ }
+ 
+ #internet-2::after{
+  visibility: visible;
+  content: "Projeto busca oferecer internet de alta velocidade em áreas remotas através de satélites.";
+ }
+/* Acabou*/
+}
+
