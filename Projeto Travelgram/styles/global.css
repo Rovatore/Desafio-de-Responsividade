@@ -58,7 +58,7 @@ a:hover {
 }
 }
 
-@media  (width <= 23.4375rem)  {
+@media  (width <= 39rem)  {
  .desktop-only {
   display: none;
 }

@@ -3,7 +3,6 @@ main {
   flex-wrap: wrap;
   gap: 24px;
   padding-block: 24px;
-  
 }
 main img {
   width: 286px;
@@ -11,18 +10,17 @@ main img {
   object-fit: cover;
 }
 
-@media (width <= 23.4375rem) {
- 
+@media (width <= 39rem) {
   main {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  gap: 16px;
-  padding-block: 16px;
-}
-main img {
-  width: 328px;
-  height: 328px;
-  object-fit: cover;
-}
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 16px;
+    padding-block: 16px;
+  }
+  main img {
+    width: 328px;
+    height: 328px;
+    object-fit: cover;
+  }
 }

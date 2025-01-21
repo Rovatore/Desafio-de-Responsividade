@@ -2,20 +2,18 @@ button {
   all: unset;
   font-weight: 500;
   color: var(--text-highlight);
-  padding: .75rem 1.5rem;
-  border-radius: .5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
   cursor: pointer;
 
   &.btn-primary {
     color: white;
     background-color: #e43a12;
-    
+
     &:hover,
     &:focus {
       background-color: #f3541c;
-
     }
-
   }
 
   &.btn-secondary {
@@ -25,11 +23,11 @@ button {
     &:hover,
     &:focus {
       color: #e43a12;
-      outline: .25rem solid var(--surface-secondary);
+      outline: 0.25rem solid var(--surface-secondary);
     }
   }
 }
-@media (width <= 23.4375rem){
+@media (width <= 39rem) {
   & .btn-secondary {
     width: 100%;
     box-sizing: border-box;

@@ -1,34 +1,29 @@
-
-  #ai-3{
-    & h3{
-      margin-bottom: 4px;
+#ai-3 {
+  & h3 {
+    margin-bottom: 4px;
   }
-
-    
 }
 
-
-@media (width <= 23.4375rem) {
-#ai-2{
+@media (width <= 39rem) {
+  #ai-2 {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     margin-bottom: 32px;
-    & img{
+    & img {
       width: 80px;
-      
     }
-    
-    #ai-2-text{
+
+    #ai-2-text {
       display: flex;
       flex-direction: column;
-        margin-left: 16px;
-      }
-      .content-tag{
-        width: fit-content;
-        height: 20px;
-        padding: 4px 8px;
-        text-wrap: nowrap;
-      }
+      margin-left: 16px;
     }
+    .content-tag {
+      width: fit-content;
+      height: 20px;
+      padding: 4px 8px;
+      text-wrap: nowrap;
+    }
+  }
 }
